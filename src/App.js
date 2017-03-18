@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import NavBar from './NavBar';
+import PriceSlider from './PriceSlider';
 
 class App extends Component {
     render() {
@@ -37,6 +38,10 @@ class App extends Component {
                         <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
                     </div>
                 </div>
+
+                <br />
+
+              <PriceSlider />
             </div>
         );
     }
