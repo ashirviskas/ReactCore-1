@@ -8,12 +8,16 @@ class PriceSlider extends React.Component {
  this.state = {
    volume: 0
  }
+ this.onPriceRangeSubmit = this.onPriceRangeSubmit.bind(this);
 }
 
 handleOnChange = (value) => {
  this.setState({
    volume: value
  })
+}
+onPriceRangeSubmit(){
+  console.log(this.state.volume);
 }
 
 render() {
@@ -23,7 +27,7 @@ render() {
    <h1> Select Price Range </h1>
     <Slider value={volume} min={300} max={3000} step={50} orientation="horizontal" onChange={this.handleOnChange} />
     <p>
-        <a className="btn btn-lg btn-success" href="#" role="button">Button</a>
+        <button className="btn btn-lg btn-success" href="#" role="button" onClick={this.onPriceRangeSubmit}>Button</button>
     </p>
    </div>
  )
