@@ -1,12 +1,10 @@
 import React, {Component} from 'react';
-import './App.css';
 import NavBar from './NavBar';
 import PriceSlider from './PriceSlider';
 
 class App extends Component {
     render() {
         return (
-
             <div className="container">
                 <NavBar/>
                 <div className="jumbotron">

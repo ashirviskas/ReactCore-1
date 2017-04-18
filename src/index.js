@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import './main.css';
-import NavBar from './NavBar'
+import App from './components/App';
+import './styles/main.css';
+import './styles/App.css';
 
 ReactDOM.render(
   <App />,
