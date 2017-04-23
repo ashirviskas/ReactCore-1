@@ -8,6 +8,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.SpaServices.Webpack;
+using ReactCore.Data;
+using ReactCore.Interfaces;
+using ReactCore.Model;
 
 namespace ReactCore
 {
@@ -30,6 +33,14 @@ namespace ReactCore
         {
             // Add framework services.
             services.AddMvc();
+
+            services.Configure<Settings>(options =>
+            {
+                options.ConnectionString = Configuration.GetSection("MongoConnection:ConnectionString").Value;
+                options.Database = Configuration.GetSection("MongoConnection:Database").Value;
+            });
+
+            services.AddTransient<ICpuRepository, CpuRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
