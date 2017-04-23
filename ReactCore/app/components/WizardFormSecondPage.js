@@ -1,7 +1,6 @@
 /* eslint-disable */
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
-import validate from './validate';
 import renderField from './renderField';
 
 const renderError = ({ meta: { touched, error } }) => touched && error ?
@@ -29,5 +28,4 @@ export default reduxForm({
   form: 'wizard',  //Form name is same
   destroyOnUnmount: false,
   forceUnregisterOnUnmount: true,  // <------ unregister fields on unmount
-  validate,
 })(WizardFormSecondPage);

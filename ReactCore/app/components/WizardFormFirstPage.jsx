@@ -3,7 +3,6 @@ import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 import Slider from 'react-rangeslider';
 import 'react-rangeslider/lib/index.css';
-import validate from './validate';
 
 import renderField from './renderField';
 
@@ -38,5 +37,4 @@ export default reduxForm({
   form: 'wizard',                 // <------ same form name
   destroyOnUnmount: false,        // <------ preserve form data
   forceUnregisterOnUnmount: true,  // <------ unregister fields on unmount
-  validate,
 })(WizardFormFirstPage);

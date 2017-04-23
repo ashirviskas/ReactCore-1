@@ -1,5 +1,5 @@
 import React from 'react';
-import PriceSlider from './PriceSlider';
+import { Link } from 'react-router-dom';
 
 const App = () => (
   <div>
@@ -11,7 +11,7 @@ const App = () => (
       ut fermentum massa justo sit amet risus.
       </p>
       <p>
-        <a href={undefined} className="btn btn-lg btn-success" role="button">Button</a>
+        <Link to="/start" className="btn btn-lg btn-success" role="button">Button</Link>
       </p>
     </div>
     <div className="row marketing">
@@ -38,7 +38,6 @@ const App = () => (
       </div>
     </div>
     <br />
-    <PriceSlider />
   </div>
         );
 
