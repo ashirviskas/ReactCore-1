@@ -1,11 +1,12 @@
 .vs/
 .git/
-SurveyPortal/.idea/
-SurveyPortal/bin/
-SurveyPortal/node_modules/
-SurveyPortal/npm-debug.log
-SurveyPortal/obj/
-SurveyPortal/wwwroot/
+ReactCore/.idea/
+ReactCore/bin/
+ReactCore/node_modules/
+ReactCore/npm-debug.log
+ReactCore/obj/
+./ReactCore/wwwroot/
+ReactCore/wwwroot/
 node_modules/
 
 
