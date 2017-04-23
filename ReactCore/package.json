@@ -1,7 +1,7 @@
 {
-  "name": "team-delta",
+  "name": "ReactCore",
   "version": "1.0.0",
-  "description": "Team delta project",
+  "description": "Just project",
   "main": "index.jsx",
   "scripts": {
     "start": "webpack-dev-server",
@@ -9,16 +9,15 @@
     "webpack": "webpack",
     "lint": "call node_modules/.bin/eslint --fix --max-warnings 10"
   },
-  "keywords": [
-    "Team",
-    "delta",
-    "sourcery"
-  ],
   "dependencies": {
     "react": "15.4.2",
     "react-dom": "15.4.2",
+    "react-rangeslider": "^2.0.1",
+    "react-redux": "^5.0.4",
     "react-router-dom": "^4.0.0",
-    "react-rangeslider": "^2.0.1"
+    "redux": "^3.6.0",
+    "redux-form": "^6.6.3",
+    "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
     "aspnet-webpack": "^1.0.27",
@@ -45,9 +44,8 @@
     "webpack-dev-server": "2.4.1",
     "webpack-hot-middleware": "^2.12.2"
   },
-  "author": "Team Delta",
-  "license": "ISC",
-  "homepage": "https://bitbucket.org/devbridge-sourcery/team-delta#readme",
+  "author": "PCMR",
+  "license": "MIT",
   "babel": {
     "presets": [
       "es2015",
