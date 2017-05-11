@@ -15,6 +15,7 @@ const renderPriceSlider = field => (
     step={50}
     orientation="horizontal"
     onChange={field.input.onChange}
+    style
   />
 );
 
